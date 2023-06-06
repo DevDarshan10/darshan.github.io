@@ -88,7 +88,7 @@ footer {
   background-color: white;
 }
 
-@media (min-width:100px) and (max-width:450px){
+@media (max-width:450px){
   .drum {
     border: 5px solid #404B69;
     font-size: 2rem;

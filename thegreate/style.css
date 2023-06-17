@@ -256,6 +256,10 @@ footer>.links>div>p:first-child{
     box-shadow:5px 5px 2px rgb(107, 107, 107);
 }
 
+footer>p{
+  font-family: 'Dancing Script', cursive;
+}
+
 @media (max-width:800px){
    .card:nth-child(3){
     display: none;

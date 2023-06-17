@@ -258,6 +258,7 @@ footer>.links>div>p:first-child{
 
 footer>p{
   font-family: 'Dancing Script', cursive;
+  color:white;
 }
 
 @media (max-width:800px){

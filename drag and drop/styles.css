@@ -1,3 +1,7 @@
+*{
+     box-sizing:border-box;
+}
+
 body{
     background-color: rgb(53, 53, 53);
     display: flex;
@@ -6,21 +10,23 @@ body{
     align-items: center;
 }
 
-.poster{
+/* .poster{
     display:flex;
     justify-content: center;
     align-items: center;
     width:100%;
     height:40vh;
     border-radius:10px;
-    background-image: linear-gradient(to top left ,#c300ff,#f700ff,#ff009d);
-}
+    
+} */
 
 .poster h1{
     font-family: 'Poppins', sans-serif;
     font-weight:900;
     font-size: 5rem;
     color:white;
+    padding:10px;
+    background-image: linear-gradient(to top left ,#c300ff,#f700ff,#ff009d);
 }
 
 img{

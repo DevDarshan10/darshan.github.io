@@ -1,13 +1,11 @@
-*{
-     box-sizing:border-box;
-}
-
 body{
     background-color: rgb(53, 53, 53);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* .poster{
@@ -20,12 +18,14 @@ body{
     
 } */
 
- h1{
+h1[class="header"]{
+    width:100%;
     font-family: 'Poppins', sans-serif;
     font-weight:900;
-    font-size: 5rem;
+    font-size: 4em;
     color:white;
-    padding:10px;
+    margin:0;
+    text-align: center;
     background-image: linear-gradient(to top left ,#c300ff,#f700ff,#ff009d);
 }
 

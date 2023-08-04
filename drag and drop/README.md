@@ -3,7 +3,7 @@ Once You have downloaded the zip file extract it and
 > Downloads> GameDev> GameDev> bin> GAMEDEV
 then test It by saying "HelloWorld" "hey,jarvis"
 > copy your ppt path and paste in the textBox then
-> git commands "open presentation" then "starts slides show"
+>  "open presentation" then "starts slides show"
 
 
 

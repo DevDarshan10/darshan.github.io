@@ -1,0 +1,58 @@
+.carousel{
+    height:40vh;
+    display: flex;
+    gap:2rem;
+    overflow:auto;
+    align-items: center;
+    position: relative;
+    background-color: rgb(51, 51, 51);
+}
+
+.carousel::-webkit-scrollbar{
+    background-color: rgb(255, 255, 255);
+    height:0px;
+}
+
+.carousel img,.carousel div{
+    height:50%;
+    aspect-ratio:1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: century gothic;
+    font-weight: 900;
+    border: 2px solid rgb(255, 255, 255);
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+}
+
+
+.carousel img:hover,.carousel div:hover{
+    height:60%;
+    
+}
+
+.carousel-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-wrapper span{
+    z-index: 99;
+    position: absolute;
+    cursor:default;
+    color:white;
+}
+
+.carousel-wrapper span:first-child{
+    top:50%;
+}
+
+.carousel-wrapper span:last-child{
+    top:50%;
+    right:0rem;
+}

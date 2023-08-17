@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+hr{
+    border:1px solid rgb(87, 87, 87);
+    margin:20px;
+}
+
+body{
+    background-color:rgb(39, 39, 39);
+    text-align: center;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 40px;
+    background-color: springgreen;
+    padding:1px 10px 10px 10px;
+    position: sticky;
+    top:0;
+    right:0;
+    left:0;
+    box-shadow:0px 1px 10px gray;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:900;
+    color:rgb(0, 0, 0);
+}
+
+nav img{
+    padding:1px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin:0;
+    display: block;
+    padding:10px;
+}
+
+nav ul li:hover{
+    background-color: rgb(0, 167, 83);
+    border-radius: 10px;
+}
+
+header input:hover{
+    border:1px solid rgb(0, 78, 30);
+}
+
+.logo{
+    width:50px;
+    height:100%;
+}
+
+header input{
+    margin-top:10px;
+    border-radius:20px;
+    border:none;
+}
+
+
+.poster{
+    display: flex;
+}
+
+.poster img{
+    width:100%;
+    height:100%;
+}
+
+.offers{
+   padding:2rem;
+   display:flex;
+   flex-wrap: wrap;
+   gap:10px;
+   justify-content: center;
+   align-items: center;
+}
+
+.offers img{
+    height:200px;
+    width:250px;
+    border-radius: 5px;
+}
+
+.stock,.daily,.beverages{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock img{
+    height:200px;
+    width:250px;
+    border-radius: 5px;
+}
+
+.daily img,.beverages img{
+    height:100px;
+    width:150px;
+    border-radius: 5px;
+}
+
+h1{
+    color:white;
+    font-family: Poppins ;
+    padding:20px;
+    font-weight:100;
+}
+
+.company img,.store img{
+    width:250px;
+    height:200px;
+    border-radius:10px;
+    margin:10px;
+}
+
+.best img{
+    border-radius:10px;
+    margin:10px;
+}
+
+.best{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+}
+.card{
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.card div:first-child>p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:100;
+    color:white;
+    padding:10px;
+}
+
+.card div:last-child>p{
+    font-family:Poppins;
+    font-weight: 900;
+    color:white;
+}
+
+.card div:last-child{
+    padding:10px;
+    background-color: rgb(99, 0, 192);
+    width:100%;
+    border-radius:10px;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap:7px;
+    position: absolute;
+    top:0.5rem;
+    right:1rem;
+}
+
+.hamburger span{
+    width:30px;
+    height:2px;
+    background-color: white;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer>.links{
+   display: flex;
+   text-align: left;
+   font-family:poppins;
+   color:gray;
+   justify-content: center;
+   gap:4rem;
+}
+
+footer>.links>div>p:first-child{
+    color:rgb(0, 255, 115);
+}
+
+.download{
+    font-family: Poppins;
+    font-weight:900;
+    color:springgreen;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+    gap:10px;
+}
+
+.download img{
+    width:20%;
+}
+
+.network{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-weight: 900;
+    color:springgreen;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.network div img{
+    width:5%;
+    margin-right:10px;
+}
+
+.card button{
+   background-image: linear-gradient(#ffe600dd,#fff384dd,#ffdb0fdd);
+   padding:10px;
+   border:none;
+   border-radius:5px;
+   margin-top:10px;
+}
+
+.card:hover{
+    box-shadow:5px 5px 1px rgb(138, 138, 138);
+}
+
+.stock img:hover,.daily img:hover,.beverages img:hover,.store img:hover,.company img:hover{
+    box-shadow:5px 5px 2px rgb(107, 107, 107);
+}
+
+footer>p{
+  font-family: 'Dancing Script', cursive;
+  color:white;
+}
+
+@media (max-width:800px){
+   .card:nth-child(3){
+    display: none;
+   }
+
+   nav{
+    flex-direction: column;
+    z-index: 9999;
+   }
+
+   nav img{
+      align-self:flex-start;
+   }
+
+   .hamburger{
+    display: flex;
+    padding:10px;
+    border-radius: 50%;
+   }
+
+   nav ul{
+      display: none;
+   }
+
+   .menu{
+      display: flex;
+      color:white;
+      height:100vh;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: rgb(0, 138, 62);
+      position:absolute;
+      top:6.3rem;
+      left:30%;
+      right:0px;
+      bottom:0px;
+      padding-top:4rem;
+   }
+
+   nav ul li{
+      padding-left:50px;
+      text-align: justify;
+      width:100%;
+   }
+
+
+}

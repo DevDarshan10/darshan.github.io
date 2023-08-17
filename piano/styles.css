@@ -1,0 +1,91 @@
+body{
+    height:100vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.piano>img{
+    display: none;
+}
+.piano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Style Script', cursive;
+    color:white;
+    
+}
+
+p{
+    font-family: 'Style Script', cursive;
+    color:white;
+}
+
+.container{
+    background:black;
+    width:400px;
+    height:200px;
+    display: flex;
+    gap:10px;
+    border-radius: 5px;
+}
+.piano>p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:900;
+    text-transform:uppercase;
+    display: none;
+}
+.container div{
+    background:white;
+    width:40%;
+    border-radius:5px;
+}
+
+.container div div{
+    background-color: black;
+    width:40px;
+    height:100px;
+    position:relative;
+    left:43px;
+}
+
+.container .a{
+    background-color:rgba(255, 255, 255, 0.664);
+    width:30%;
+    box-shadow:5px 2px 1px #000000dd;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (orientation:portrait){
+    .body{
+           
+    }
+
+    .piano>img{
+        display:block;
+        width:200px;
+    }
+
+    .piano>p{
+        display: block;
+    }
+    .container{
+        display: none;
+    }
+
+}

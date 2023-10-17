@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Prompt&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.about{
+    background-image: url('assets/h1_hero.png.webp');
+    background-size:cover;
+    background-repeat: none;
+    background-position: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+}
+
+.about .btn{
+    background-color: orangered;
+    border:none;
+}
+
+.img-carousel img{
+    width:fit-content;
+    border-radius: 2rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.img-card{
+    border:none;
+    font-family: Poppins;
+    font-size:1.5rem;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+  }
+  
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+  }
+  
+  .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+  .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+  .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+  
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+  }
+  
